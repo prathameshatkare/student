@@ -1,9 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-        {"src": "main.py", "use": "@vercel/python"}
-    ],
-    "routes": [
-        {"src": "/(.*)", "dest": "main.py"}
-    ]
+  "build": {
+    "env": {
+      "MYSQL_USER": "root",
+      "MYSQL_PASSWORD": "1234",
+      "MYSQL_DATABASE": "studentdbms"
+    }
+  }
 }
